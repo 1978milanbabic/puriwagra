@@ -1,0 +1,291 @@
+.section4 {
+    width: 100%;
+    color: #fff;
+    padding: 60px 0;
+    background-image: url(../img/backs/stockings.jpg);
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    h2, p, h3 {
+        text-shadow: 0 0 2px #000, 0 0 4px #000, 0 0 6px #000, 0 0 7px #000, 0 0 8px #000, 0 0 9px #000, 0 0 10px #000, 0 0 12px #000, 0 0 15px #000;
+    }
+
+    h2 {
+        color: $blue;
+        padding-bottom: 20px;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .prep {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 2;
+        padding-bottom: 55px;
+    }
+
+    .top-table {
+        width: 100%;
+        margin-bottom: 60px;
+        display: table;
+
+        .left-cell {
+            width: 50%;
+            display: table-cell;
+            vertical-align: middle;
+            .imgcont {
+                width: 95%;
+                max-width: 320px;
+                display: inline-block;
+                text-align: center;
+                padding: 15px;
+                background-color: rgba(0, 0, 0, 0.6);
+                border-radius: 25px;
+                border: 1px solid #fff;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .right-cell {
+            width: 50%;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+
+            p {
+                text-shadow: none;
+                display: inline-block;
+                width: 100%;
+                max-width: 540px;
+                padding: 20px;
+                text-align: justify;
+                text-align-last: center;
+                background-color: rgba(0, 0, 0, 0.6);
+                font-size: 30px;
+                line-height: 1.6;
+                span {
+                    color: $blue;
+                }
+            }
+        }
+    }//top-table
+
+    .bottom-table {
+        width: 100%;
+        display: table;
+
+        .left-cell {
+            display: table-cell;
+            width: 50%;
+            vertical-align: middle;
+            text-align: left;
+
+            h3 {
+                font-family: $anton;
+                font-size: 90px;
+                font-weight: 400;
+            }
+
+            p {
+                font-size: 48px;
+                font-weight: 900;
+                line-height: 1.5;
+            }
+        }
+
+        .right-cell {
+            display: table-cell;
+            width: 50%;
+            vertical-align: middle;
+
+            img {
+                width: 100%;
+                max-width: 540px;
+                margin-left: -25%;
+            }
+        }
+    }//bottom table
+
+    .naruc {
+        color: $blue;
+        font-size: 60px;
+        font-weight: 900;
+        padding: 20px 0;
+    }
+
+    .btn {
+        margin: 45px 0 0;
+    }
+
+}//section4
+
+@media screen and (max-width: 1330px) {
+    .section4 {
+        .bottom-table {
+            .left-cell {
+                width: 625px;
+            }
+            .right-cell {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .section4 {
+        h2 {
+            font-size: 40px;
+        }
+        .prep {
+            font-size: 18px;
+        }
+        .top-table {
+            .left-cell {
+                width: auto;
+            }
+            .right-cell {
+                width: 500px;
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+        .bottom-table {
+            .left-cell {
+                width: 550px;
+                padding-left: 100px;
+                h3 {
+                    font-size: 50px;
+                }
+                p {
+                    font-size: 36px;
+                }
+            }
+        }
+        .naruc {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .section4 {
+        .prep {
+            padding-bottom: 40px;
+        }
+        .top-table {
+            display: block;
+            margin-bottom: 40px;
+            .left-cell {
+                display: block;
+                margin: 0 auto;
+                padding-bottom: 40px;
+            }
+            .right-cell {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .bottom-table {
+            display: block;
+            .left-cell {
+                display: block;
+                padding-left: 0;
+                margin: 0 auto;
+                max-width: 450px;
+                padding-bottom: 40px;
+            }
+            .right-cell {
+                display: block;
+                padding-bottom: 40px;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+        .naruc {
+            padding: 0;
+            font-size: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .section4 {
+        background-image: url(../img/backs/stockings_small.jpg);
+
+        .prep br {
+            display: none;
+        }
+
+        .bottom-table .left-cell {
+            max-width: 400px;
+
+            h3 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 30px;
+            }
+        }
+
+        .top-table {
+            .left-cell {
+                .imgcont {
+                    width: 80%;
+                    max-width: 300px;
+                }
+            }
+            .right-cell {
+                width: 90%;
+                max-width: 500px;
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section4 {
+        padding: 40px 0;
+        h2 {
+            font-size: 34px;
+        }
+
+        .prep {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .top-table .right-cell {
+            p {
+                padding: 10px 20px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+        }
+
+        .bottom-table {
+            .left-cell {
+                max-width: 300px;
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .naruc {
+            font-size: 25px;
+        }
+    }
+}

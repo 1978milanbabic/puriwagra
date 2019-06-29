@@ -1,0 +1,214 @@
+//********************** FONTS ******************************
+@import url('https://fonts.googleapis.com/css?family=Anton|Lato:400,900|Montserrat:400,500,500i,600,700,800,900&subset=latin-ext');
+
+//********************** BASICS (ANULL BASIC DEFAULTS OF BROWSERS) *****************************
+
+body, html {
+    width: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+a {
+    color: initial;
+    text-decoration: none;
+}
+
+//no select, touch callout, drag, drop,... except text (enabled 'copy' only on 'text' elements)
+a, span, i, div, img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    user-drag: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+//***** loader *******
+
+.loader-outer {
+    position: fixed;
+    display: table;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999; 
+}
+
+.loader-middle {
+    display: table-cell;
+    vertical-align: middle; 
+}
+
+.loader-inner {
+    display: block;
+    width: 80px;
+    margin: 0 auto; 
+}
+
+.loader-inner img {
+    width: 100%; 
+}
+
+//******** pics-preload *********
+
+#pics-preload {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    opacity: 0;
+    overflow: hidden; 
+}
+
+#pics-preload img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+//***************** css-connector *****************
+
+#css-connector{
+    width: 1px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2
+}
+
+//**************** container ***********************
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+
+.inner {
+    width: 95%;
+    max-width: 1282px;
+    margin: 0 auto;
+}
+
+//************* top background container *******
+.top-background-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3000px;
+    z-index: 2;
+    background-color: #000;
+    background-image: url(../img/backs/above_fold_bg.jpg);
+    background-size: 100% auto;
+    background-position-x: center;
+    background-position-y: 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#scale-cont {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 240px;
+    z-index: 3;
+
+    img {
+        width: 100%;
+    }
+}
+
+section {
+    width: 100%;
+    position: relative;
+    z-index: 4;
+}
+
+//**************** VARIABLES *******************
+
+@import 'variables/basic-variables';
+@import 'variables/colors';
+
+//********************** PARTIALS *********************
+
+@import 'partials/nav';
+@import 'partials/header';
+@import 'partials/form';
+@import 'partials/section1';
+@import 'partials/section2';
+@import 'partials/carousel';
+@import 'partials/section3';
+@import 'partials/section4';
+@import 'partials/section5';
+@import 'partials/section6';
+@import 'partials/section7';
+@import 'partials/section8';
+@import 'partials/section9';
+@import 'partials/section10';
+
+//********************** MEDIA *********************
+
+@media screen and (min-width: 1920px) {
+    .top-background-container {
+        background-size: 1920px auto;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    #scale-cont {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    #css-connector {
+        width: 2px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #css-connector {
+        width: 3px;
+    }
+
+    .top-background-container {
+        background-image: url(../img/backs/above_fold_bg_small.jpg);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #css-connector {
+        width: 4px;
+    }
+    #scale-cont {
+        width: 80px;
+    }
+}

@@ -1,0 +1,173 @@
+.section10 {
+    width: 100%;
+    background-image: url(../img/backs/bg-bottom.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 45px 0 150px;
+
+    h2 {
+        font-family: $anton;
+        font-weight: 400;
+        font-size: 90px;
+        text-align: left;
+    }
+
+    h3 {
+        font-family: $lato;
+        font-size: 48px;
+        font-weight: 900;
+        text-align: left;
+    }
+
+    #bottomform {
+        width: 100%;
+        max-width: 100%;
+        display: table;
+        padding: 50px 0;
+    }
+
+    .left-cell {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+        min-width: 400px;
+        text-align: center;
+    }
+
+    .form-inner {
+        display: inline-block;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .right-bottle {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        img {
+            width: 80%;
+            max-width: 380px;
+        }
+    }
+
+    .time {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .utoku {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 2;
+    }
+
+    .svakih {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 2;
+        span {
+            color: $blue;
+        }
+    }
+
+    .tren {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.6;
+        span {
+            color: $blue;
+        }
+    }
+
+}//section10
+
+@media screen and (max-width: 1170px) {
+    .section10 {
+        padding: 45px 0 60px;
+        h2 {
+            font-size: 50px;
+            text-align: center;
+        }
+        h3 {
+            font-size: 36px;
+            text-align: center;
+        }
+        .utoku {
+            font-size: 18px;
+        }
+        .svakih {
+            font-size: 18px;
+        }
+        .tren {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .section10 {
+        background-image: url(../img/backs/bg-bottom_small.jpg);
+
+        #bottomform {
+            display: block;
+        }
+
+        .left-cell {
+            width: 100%;
+            display: block;
+        }
+
+        .right-bottle {
+            width: 100%;
+            display: block;
+            position: relative;
+            z-index: 1;
+
+            img {
+                max-width: 200px;
+            }
+        }
+
+        form#bottomform .form-inner {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section10 {
+        padding: 40px 0 45px;
+
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        .left-cell {
+            min-width: auto;
+            margin-top: -30px;
+        }
+
+        .time {
+            font-size: 24px;
+        }
+
+        .utoku, .svakih {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .tren {
+            font-size: 18px;
+            padding-top: 5px;
+        }
+    }
+}

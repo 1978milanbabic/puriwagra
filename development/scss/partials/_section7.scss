@@ -1,0 +1,46 @@
+.section7 {
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    p {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.6;
+        padding: 15px 0 50px;
+    }
+
+    h3 {
+        color: $blue;
+        font-size: 36px;
+        font-weight: 600;
+        padding-bottom: 50px;
+    }
+
+}//section7
+
+@media screen and (max-width: 1170px) {
+    .section7 {
+        p {
+            font-size: 22px;
+        }
+        h3 {
+            font-size: 26px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section7 {
+        p {
+            padding: 15px 0 40px;
+            font-size: 16px;
+        }
+        h3 {
+            font-size: 24px;
+        }
+    }
+}

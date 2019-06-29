@@ -1,0 +1,230 @@
+.section1 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+
+    p, h3 {
+        text-shadow: 0 0 2px #000,
+        0 0 4px #000,
+        0 0 6px #000,
+        0 0 7px #000,
+        0 0 8px #000,
+        0 0 9px #000,
+        0 0 10px #000,
+        0 0 12px #000,
+        0 0 15px #000; 
+    }
+
+    h3 {
+        font-size: 36px;
+        font-weight: 600;
+        width: 95%;
+        max-width: 975px;
+        margin: 0 auto;
+        line-height: 1.33;
+    }
+
+    .nedov {
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 1.6;
+        span {
+            color: $dblue;
+        }
+    }
+
+    .threesteps-table {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .step {
+        display: table-cell;
+        vertical-align: top;
+
+        i {
+            width: 66px;
+        }
+    }
+
+    .topp {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 40px 0 30px;
+    }
+
+    .imgcont {
+        width: 90%;
+        max-width: 350px;
+        margin: 0 auto;
+        border: 1px solid $blue;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .bottomp {
+        font-size: 30px;
+        font-weight: 800;
+        padding: 30px 0 45px;
+        text-transform: uppercase;
+    }
+
+    .step-four {
+        width: 100%;
+        max-width: 620px;
+        margin: 0 auto 90px;
+
+        i {
+            width: 109px;
+        }
+    }
+
+    .topp4 {
+        font-size: 30px;
+        font-weight: 600;
+        padding: 45px 0 35px;
+    }
+
+    .step-four .imgcont {
+        max-width: 616px;
+    }
+
+    .bottomp4 {
+        padding: 35px 0 0;
+        font-size: 36px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .svaki {
+        font-size: 48px;
+        font-weight: 800;
+        color: $blue;
+    }
+
+    .jedinst {
+        width: 100%;
+        max-width: 1150px;
+        margin: 0 auto 10px;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.66;
+
+        span {
+            color: $blue;
+        }
+    }
+
+}//section1
+
+@media screen and (max-width: 1170px) {
+    .section1 {
+        h3 {
+            font-size: 32px;
+        }
+        .bottomp {
+            font-size: 24px;
+        }
+        .bottomp4 {
+            font-size: 24px;
+        }
+        .svaki {
+            font-size: 36px;
+        }
+        .jedinst {
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .section1 {
+        h3, .nedov {
+            font-size: 24px;
+            width: 100%;
+            max-width: 630px;
+            margin: 0 auto;
+        }
+        .threesteps-table {
+            display: block;
+        }
+        .step {
+            width: 90%;
+            max-width: 320px;
+            display: block;
+            margin: 0 auto 35px;
+            i {
+                width: 60px;
+            }
+        }
+        .topp {
+            margin: 25px 0 20px;
+        }
+        .step-four {
+            width: 100%;
+            max-width: 380px;
+            i {
+                width: 80px;
+            }
+        }
+        .topp4 {
+            padding: 30px 0 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section1 {
+        h3 {
+            font-size: 20px;
+        }
+        .nedov {
+            font-size: 20px;
+        }
+        .threesteps-table {
+            margin-top: 40px;
+
+            .step {
+                margin-bottom: 0;
+                i {
+                    width: 50px;
+                }
+            }
+        }
+
+        .topp {
+            font-size: 20px;
+            margin: 15px 0 10px;
+        }
+
+        .bottomp {
+            font-size: 22px;
+            padding: 20px 0 45px;
+        }
+
+        .step-four {
+            margin-bottom: 60px;
+            i {
+                width: 70px;
+            }
+        }
+
+        .topp4 {
+            padding: 10px 0 10px;
+            font-size: 25px;
+        }
+
+        .bottomp4 {
+            padding-top: 20px;
+        }
+
+        .jedinst {
+            font-size: 18px;
+        }
+    }
+}

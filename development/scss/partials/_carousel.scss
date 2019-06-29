@@ -1,0 +1,91 @@
+.carousel {
+    width: 175%;
+    overflow: hidden;
+    padding: 60px 0;
+    //z-index: 4;
+    display: table;
+    table-layout: fixed;
+    transition: all 0.7s;
+
+    .opt {
+        display: table-cell;
+        vertical-align: top;
+        text-align: center;
+        i {
+            width: 200px;
+        }
+        p {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 50px;
+        }
+    }
+
+}//carousel
+
+#cd2 {
+    width: 275%;
+
+    .opt {
+        i {
+            width: 175px;
+        }
+        p.btxt {
+            color: $blue;
+            line-height: 1.6;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1170px) {
+    .carousel {
+        width: 233.33333%;
+    }
+    #cd2 {
+        width: 370%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .carousel {
+        .opt i {
+            width: 150px;
+        }
+        .opt p {
+            margin-top: 40px;
+            font-size: 18px;
+        }
+    }
+    #cd2 {
+        .opt i {
+            width: 120px;
+        }
+        .opt p {
+            margin-top: 30px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .carousel {
+        width: 350%;
+    }
+    #cd2 {
+        width: 550%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .carousel {
+        width: 700%;
+        padding-bottom: 10px;
+    }
+    #cd2 {
+        width: 1100%;
+    }
+}

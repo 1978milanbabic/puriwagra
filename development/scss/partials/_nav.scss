@@ -1,0 +1,59 @@
+nav {
+    width: 100%;
+    position: relative;
+    z-index: 4;
+
+    .inner {
+        display: table;
+    }
+
+    .home-cell {
+        display: table-cell;
+        vertical-align: top;
+        width: 142px;
+        padding: 15px 0 15px 15px;
+        text-align: left;
+        img {
+            width: 100%;
+        }
+    }
+
+    .logo-cell {
+        display: table-cell;
+        vertical-align: top;
+        padding: 35px 0 40px;
+        text-align: center;
+        img {
+            width: 95%;
+            max-width: 290px;
+        }
+    }
+
+    .empty-cell {
+        display: table-cell;
+        vertical-align: top;
+        width: 127px;
+    }
+}//nav
+
+@media screen and (max-width: 630px) {
+    nav {
+        .inner {
+            display: block;
+        }
+
+        .home-cell {
+            display: block;
+        }
+
+        .logo-cell {
+            width: 300px;
+            display: block;
+            margin: -20px auto 0;
+        }
+
+        .empty-cell {
+            display: none;
+        }
+    }
+}

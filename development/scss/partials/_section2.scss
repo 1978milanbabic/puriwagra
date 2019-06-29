@@ -1,0 +1,145 @@
+.section2 {
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+
+    h4 {
+        padding: 60px 0 20px;
+        color: $dblue;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    p {
+        text-shadow: 0 0 2px #000,
+        0 0 4px #000,
+        0 0 6px #000,
+        0 0 7px #000,
+        0 0 8px #000,
+        0 0 9px #000,
+        0 0 10px #000,
+        0 0 12px #000,
+        0 0 15px #000; 
+    }
+
+    .mainpic-cont {
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 70%;
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .par1 {
+        position: absolute;
+        left: 0;
+        top: 18%;
+        text-align: left;
+        font-size: 36px;
+        font-weight: 700;
+        z-index: 2;
+    }
+
+    .par2 {
+        position: absolute;
+        right: 0;
+        top: 23%;
+        text-align: right;
+        font-size: 36px;
+        font-weight: 700;
+        z-index: 2;
+    }
+
+    .par3 {
+        position: absolute;
+        left: 0;
+        top: 48%;
+        text-align: left;
+        font-size: 36px;
+        font-weight: 700;
+        z-index: 2;
+    }
+
+    .par4 {
+        position: absolute;
+        right: 0;
+        top: 78%;
+        color: $blue;
+        text-align: right;
+        font-size: 48px;
+        font-weight: 700;
+        z-index: 2;
+    }
+
+    h3 {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.66;
+        width: 100%;
+        max-width: 730px;
+        margin: 0 auto 40px;
+    }
+
+    
+
+
+}//section2
+
+@media screen and (max-width: 1170px) {
+    .section2 {
+        h4 {
+            font-size: 36px;
+        }
+        .par1, .par2, .par3 {
+            font-size: 24px;
+        }
+        .par4 {
+            font-size: 32px;
+        }
+        h3 {
+            font-size: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .section2 {
+        .par2 {
+            top: 28%;
+        }
+        h3 {
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section2 {
+        h4 {
+            font-size: 30px;
+        }
+
+        .mainpic-cont {
+            img {
+                width: 100%;
+            }
+        }
+
+        .par1, .par2, .par3 {
+            font-size: 18px;
+        }
+
+        .par4 {
+            font-size: 26px;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    }
+}
