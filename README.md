@@ -1,12 +1,12 @@
 # Puriwagra
 
-## Github repo namenjen prezentaciji
+## Github repo for presentation purpose
 
 ----------
 
-Komercijalna web stranica za potrebe reklamiranja proizvoda
+Commercial website for the purpose of advertising the product
 
- - PHP stranica koja prikuplja narudzbine i salje na klijenov mail - u development folderu promenjeno na HTML radi lakseg testiranja izgleda stranice jer u principu index file ni nema php funkcija
- - Frontend : SASS, Gulp, jQuery, vanila JS, jedan moj framework za sinhronizaciju css medija uslova sa trigerovanjem JS-a, CSS animacije bez frameworka, bez flex-a, bez grid-a, bez bootstrapa
- - Sve radjeno da zadovolji maksimalne performanse i pokrije starije verzije browsera
- - Stranica kao primer zanimljivih animacija i izgleda
+- PHP page that collects orders and sends to clients mail - in the development folder changed to HTML for easy page layout testing because in principle index file does not have php functions
+ - Frontend: SASS, Gulp, jQuery, vanilla JS, one of my framework for synchronizing the css media conditions with triggering JS, CSS animation without frameworks, without flex, no grid, no grid, no bootstrap
+ - Page developed to meet maximum performance and cover older browser versions
+ - Page as an example of interesting animations and looks
